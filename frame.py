@@ -46,6 +46,8 @@ def frame_roomy_from_json_response(json, class_name, package):
         members.append(object_dict)
 
     top_object["members"] = members
+    top_object["gson"] = True
+    top_object["parcelable"] = True
 
     output.insert(0, top_object)
 
