@@ -1,7 +1,7 @@
 # Framey
 
 ## To Run
-ptyhon frame.py
+ptyhon3 frame.py
 
 ## Things you'll be asked
 - the path to a json file with an example of the endpoint's response
