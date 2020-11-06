@@ -1,5 +1,7 @@
 # Framey
 
+A companion library to [Roomy](https://github.com/jhillman/roomy).
+
 ## To Run
 ptyhon3 frame.py
 
