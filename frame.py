@@ -1,8 +1,7 @@
 import json
 import sys
 
-
-DEBUG = False
+DEBUG = True
 
 def print_debug(value):
     if DEBUG:
@@ -18,9 +17,11 @@ def frame_roomy_from_json_response(json, class_name, package):
 
     members = []
 
-    for key, value in json.items():
-        # print_debug(key)
+    if isinstance(json, list):
+        transformed_dict = {"objects": json}
+        json = transformed_dict
 
+    for key, value in json.items():
         if key == "success":
             continue
 
