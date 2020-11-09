@@ -1,6 +1,7 @@
 import json
 import sys
 
+
 DEBUG = False
 
 def print_debug(value):
@@ -47,7 +48,7 @@ def frame_roomy_from_json_response(json, class_name, package):
             object_dict["class"] = "kotlin.Boolean"
 
         elif isinstance(value, int):
-            if key.endswith("id"):
+            if key.lower().endswith("id"):
                 print_debug("%s is a long: %s" % (key, value))
                 object_dict["class"] = "kotlin.Long"
             else:
